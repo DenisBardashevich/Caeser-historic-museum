@@ -1,0 +1,117 @@
+.faq-block {
+    padding: 0 90px;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+
+.faq-block-title,
+.faq-block-description {
+    font-size: 24px;
+}
+
+.faq-content {
+    margin: auto;
+    margin-top: 40px;
+    width: 980px;
+}
+.question-container,
+.question-text {
+    margin: 0 80px;
+}
+.question-text {
+    opacity: 0;
+}
+.question-text.shown {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+.question-container {
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.question {
+    font-size: 24px;
+}
+.question-text {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.faq-block.animate {
+    animation: lookFAQ 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.question-container img {
+    transition: transform 0.3s ease;
+}
+
+@keyframes lookFAQ {
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .faq-block {
+        padding: 0 60px;
+        padding-bottom: 20px;
+    }
+    .faq-content {
+        width: 820px;
+    }
+}
+
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .faq-block {
+        padding: 0px 20px 40px 20px;
+    }
+    .faq-content {
+        width: 100%;
+    }
+    .question {
+        font-size: 18px;
+    }
+    .question-text {
+        font-size: 14px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .faq-block {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .faq-content {
+        width: 400px;
+    }
+    .question-container,
+    .question-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .faq-content {
+        margin-top: 20px;
+    }
+    .question-container img {
+        height: 14px;
+        margin-left: 10px;
+    }
+}
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .faq-content {
+        width: 300px;
+    }
+    .question-container,
+    .question-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

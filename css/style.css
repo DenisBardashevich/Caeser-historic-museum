@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url("./_blocks/_header.css");
+@import url("./_blocks/_home.css");
+@import url("./_blocks/_info.css");
+@import url("./_blocks/_faq.css");
+@import url("./_blocks/_about.css");
+@import url("./_blocks/_gallery.css");
+@import url("./_blocks/_footer.css");
+
+@import url("../css/variables.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    background: var(--background-color);
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #292929;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #292929;
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #3e3e3e;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--background-btn);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.scroll-to-top p {
+    font-size: 24px;
+    color: var(--color-btn);
+}
+@media (min-width: 1025px) {
+    .scroll-to-top:hover {
+        background-color: var(--background-btn-hover);
+    }
+}
+.hidden {
+    display: none;
+}

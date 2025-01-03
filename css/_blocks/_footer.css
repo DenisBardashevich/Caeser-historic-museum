@@ -1,0 +1,114 @@
+.footer {
+    padding: 0 70px;
+    width: 1460px;
+    margin: 0 auto;
+    height: 250px;
+    color: var(--text-color);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-footer {
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--title-color);
+}
+
+.text-details {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    transition: opacity 0.3s ease;
+}
+.social-links a:not(:first-child) {
+    margin-left: 30px;
+}
+@media (min-width: 769px) {
+    .social-links a:hover {
+        opacity: 0.7;
+    }
+}
+
+.footer-center {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.footer-center .gold {
+    color: var(--title-color);
+}
+
+/* Адаптируем под разрешение от 1400 до 1600px */
+@media (max-width: 1600px) {
+    .footer {
+        width: 1380px;
+    }
+}
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .footer {
+        width: 1000px;
+    }
+}
+
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .footer {
+        width: 760px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+        display: flex;
+        width: 420px;
+    }
+    .footer-section {
+        width: 100%;
+    }
+    .footer-left {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .text-details-last {
+        margin-bottom: 30px;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

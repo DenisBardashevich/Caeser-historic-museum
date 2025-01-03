@@ -1,0 +1,374 @@
+.sculpture-info-block {
+    height: 840px;
+    position: relative;
+    overflow: hidden;
+}
+.sculpture-item-description {
+    max-width: 183px;
+    opacity: 0;
+}
+.sculpture-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+}
+.sculpture-item:nth-child(1) {
+    margin-top: 210px;
+}
+.sculpture-item:nth-child(2) {
+    margin-top: 120px;
+}
+.sculpture-item:nth-child(3) {
+    margin-top: 220px;
+}
+.sculpture-item:nth-child(4) {
+    margin-top: 320px;
+}
+.sculpture-item:nth-child(5) {
+    margin-top: 70px;
+}
+.sculpture-item:nth-child(6) {
+    margin-top: 220px;
+}
+
+.sculpture-item {
+    margin: 0 auto;
+}
+.sculpture-text {
+    margin-top: 10px;
+}
+.sculpture-img {
+    margin-top: 20px;
+    opacity: 0;
+}
+
+@media (min-width: 1025px) {
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculpture 1s ease-in-out forwards;
+    }
+    .sculpture-item-description {
+        transform: translateY(270px);
+    }
+    .sculpture-img {
+        transform: translateY(-270px);
+    }
+}
+
+.sculpture-flow {
+    animation: animationFlow 2s linear infinite;
+}
+.sculpture-flow-1 {
+    position: absolute;
+    top: 140px;
+    animation-delay: 0s;
+}
+.sculpture-flow-2 {
+    position: absolute;
+    top: 130px;
+    animation-delay: 0.2s;
+}
+.sculpture-flow-3 {
+    position: absolute;
+    top: 120px;
+    animation-delay: 0.4s;
+}
+.sculpture-flow-4 {
+    position: absolute;
+    top: 110px;
+    animation-delay: 0.6s;
+}
+.sculpture-flow-5 {
+    position: absolute;
+    top: 100px;
+    animation-delay: 0.8s;
+}
+.sculpture-flow-6 {
+    position: absolute;
+    top: 90px;
+    animation-delay: 1s;
+}
+.sculpture-flow-7 {
+    position: absolute;
+    top: 80px;
+    animation-delay: 1.2s;
+}
+.sculpture-flow-8 {
+    position: absolute;
+    top: 70px;
+    animation-delay: 1.4s;
+}
+.sculpture-flow-9 {
+    position: absolute;
+    top: 60px;
+    animation-delay: 1.6s;
+}
+.sculpture-flow-10 {
+    position: absolute;
+    top: 50px;
+    animation-delay: 1.8s;
+}
+.sculpture-flow-11 {
+    position: absolute;
+    top: 40px;
+    animation-delay: 2s;
+}
+.sculpture-flow-12 {
+    position: absolute;
+    top: 30px;
+    animation-delay: 2.2s;
+}
+.sculpture-flow-13 {
+    position: absolute;
+    top: 20px;
+    animation-delay: 2.4s;
+}
+.sculpture-flow-14 {
+    position: absolute;
+    top: 10px;
+    animation-delay: 2.6s;
+}
+.sculpture-flow-15 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 2.8s;
+}
+.sculpture-flow-16 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 3s;
+}
+.sculpture-flow-17 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 3.2s;
+}
+.sculpture-flow-18 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 3.4s;
+}
+.sculpture-flow-19 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 3.6s;
+}
+.sculpture-flow-20 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 3.8s;
+}
+.sculpture-flow-21 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 4s;
+}
+.sculpture-flow-22 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 4.2s;
+}
+.sculpture-flow-23 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 4.4s;
+}
+.sculpture-flow-24 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 4.6s;
+}
+.sculpture-flow-25 {
+    position: absolute;
+    top: 0px;
+    animation-delay: 4.8s;
+}
+
+
+@keyframes lookSculpture {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes lookSculptureMobile {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animationFlow {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.1;
+    }
+    10% {
+        opacity: 0.2;
+    }
+    15% {
+        opacity: 0.3;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 0.6;
+    }
+    35% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 0.8;
+    }
+    45% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1; 
+    }
+    55% {
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    65% {
+        opacity: 0.7;
+    }
+    70% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    85% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    95% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .sculpture-grid {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sculpture-info-block {
+        height: 1300px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 150px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 60px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 160px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: 120px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: 70px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 130px;
+    }
+}
+
+/* Адаптируем под разрешение от 768px до 1024*/
+@media (max-width: 1024px) {
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculptureMobile 1s ease-in-out forwards;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .sculpture-grid {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sculpture-info-block {
+        height: 1860px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 100px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 80px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: 10px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: 50px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 0px;
+    }
+    .sculpture-item-description {
+        max-width: 163px;
+    }
+    .sculpture-item-description.animate,
+    .sculpture-img.animate {
+        animation: lookSculptureMobile 1s ease-in-out forwards;
+    }
+}
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .sculpture-item-description {
+        max-width: 300px;
+    }
+    .sculpture-grid {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .sculpture-info-block {
+        height: 2370px;
+    }
+    .sculpture-item:nth-child(1) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(2) {
+        margin-top: 0px;
+    }
+    .sculpture-item:nth-child(3) {
+        margin-top: 20px;
+    }
+    .sculpture-item:nth-child(4) {
+        margin-top: -25px;
+    }
+    .sculpture-item:nth-child(5) {
+        margin-top: -50px;
+    }
+    .sculpture-item:nth-child(6) {
+        margin-top: 0px;
+    }
+}

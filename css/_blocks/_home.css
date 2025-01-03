@@ -1,0 +1,299 @@
+.main {
+    width: 1460px;
+    margin: 0 auto;
+}
+
+/* Explore Block__________________________________________ */
+.explore-block {
+    margin-top: 100px;
+    height: 824px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text {
+    color: var(--text-color);
+}
+.title {
+    color: var(--title-color);
+    font-weight: 600;
+}
+.explore-text {
+    font-size: 24px;
+}
+.explore-title {
+    font-size: 56px;
+}
+.explore-block-content {
+    margin-top: auto;
+    position: relative;
+}
+.explore-elipse {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+    animation: flicker 5s linear infinite;
+}
+.explore-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+}
+.explore-text-sculpture-1-img,
+.explore-text-sculpture-2,
+.explore-text-sculpture-3,
+.explore-text-sculpture-4 {
+    display: flex;
+}
+.explore-text-sculpture-1-img img,
+.explore-text-sculpture-2 img,
+.explore-text-sculpture-3 img,
+.explore-text-sculpture-4 img {
+    display: block;
+}
+.explore-text-sculpture-2 img,
+.explore-text-sculpture-3 img,
+.explore-text-sculpture-4 img {
+    margin-top: -15px;;
+}
+.explore-text-sculpture-2-text,
+.explore-text-sculpture-3-text,
+.explore-text-sculpture-4-text {
+    margin-left: 5px;
+}
+.explore-text-sculpture-1-text {
+    font-size: 17px;
+    max-width: 420px;
+}
+.explore-text-sculpture-2-text {
+    max-width: 234px;
+}
+.explore-text-sculpture-3-text {
+    max-width: 247px;
+}
+.explore-text-sculpture-4-text {
+    max-width: 207px;
+}
+.explore-text-sculpture-1 {
+    position: absolute;
+    top: 330px;
+    right: 385px;
+    opacity: 0;
+}
+.explore-text-sculpture-2 {
+    position: absolute;
+    top: 410px;
+    left: 440px;
+    opacity: 0;
+}
+.explore-text-sculpture-3 {
+    position: absolute;
+    top: 730px;
+    left: 260px;
+    opacity: 0;
+}
+.explore-text-sculpture-4 {
+    position: absolute;
+    top: 830px;
+    right: 280px;
+    opacity: 0;
+}
+.explore-text-sculpture-1.animate,
+.explore-text-sculpture-2.animate,
+.explore-text-sculpture-3.animate,
+.explore-text-sculpture-4.animate {
+    animation: lookText 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes lookText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Адаптируем под разрешение от 1400 до 1600px */
+@media (max-width: 1600px) {
+    .main {
+        width: 1380px;
+    }
+    .explore-text-sculpture-1 {
+        right: 290px;
+    }
+    .explore-text-sculpture-2 {
+        left: 340px;
+    }
+    .explore-text-sculpture-3 {
+        left: 170px;
+    }
+    .explore-text-sculpture-4 {
+        right: 180px;
+    }
+}
+
+/* Адаптируем под разрешение от 1024 до 1400px */
+@media (max-width: 1400px) {
+    .main {
+        width: 1000px;
+    }
+    .explore-text-sculpture-1 {
+        right: 200px;
+    }
+    .explore-text-sculpture-2 {
+        left: 200px;
+    }
+    .explore-text-sculpture-3 {
+        left: 50px;
+    }
+    .explore-text-sculpture-4 {
+        right: 30px;
+    }
+    .explore-text-sculpture-1-text {
+        max-width: 320px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 180px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 180px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 180px;
+    }
+}
+
+/* Адаптируем под разрешение от 768 до 1024px */
+@media (max-width: 1024px) {
+    .main {
+        width: 760px;
+    }
+    .explore-text-sculpture-1 {
+        right: 90px;
+    }
+    .explore-text-sculpture-2 {
+        left: 150px;
+    }
+    .explore-text-sculpture-3 {
+        left: 5px;
+    }
+    .explore-text-sculpture-4 {
+        right: 10px;
+    }
+    .explore-text-sculpture-1-text {
+        max-width: 300px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 100px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 100px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 100px;
+    }
+}
+
+/* Адаптируем под разрешение от 425 до 768px */
+@media (max-width: 768px) {
+    .explore-block {
+        height: 600px;
+    }
+    .main {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .explore-text {
+        font-size: 20px;
+    }
+    .explore-title {
+        font-size: 42px;
+    }
+    .explore-text-sculpture-1 {
+        right: 75px;
+        top: 225px;
+    }
+    .explore-text-sculpture-2 {
+        left: 40px;
+        top: 395px;
+    }
+    .explore-text-sculpture-3 {
+        left: 5px;
+        top: 530px;
+    }
+    .explore-text-sculpture-4 {
+        right: 15px;
+        top: 540px;
+    }
+    .explore-text-sculpture-1-text {
+        font-size: 14px;
+        max-width: 180px;
+    }
+    .explore-text-sculpture-2-text {
+        max-width: 100px;
+        font-size: 10px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 40px;
+        font-size: 10px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 30px;
+        font-size: 10px;
+    }
+}
+
+/* Адаптируем под разрешение до 425px */
+@media (max-width: 425px) {
+    .explore-block {
+        height: 380px;
+    }
+    .explore-title {
+        font-size: 32px;
+    }
+    .explore-text-sculpture-1 {
+        right: 10px;
+        top: 180px;
+    }
+    .explore-text-sculpture-2 {
+        left: 20px;
+        top: 230px;
+    }
+    .explore-text-sculpture-3 {
+        left: 10px;
+        top: 315px;
+    }
+    .explore-text-sculpture-4 {
+        right: 0px;
+        top: 370px;
+    }
+    .explore-text-sculpture-1-text {
+        font-size: 10px;
+        max-width: 180px;
+    }
+    .explore-text-sculpture-2-text {
+        font-size: 8px;
+    }
+    .explore-text-sculpture-3-text {
+        max-width: 100px;
+        font-size: 8px;
+    }
+    .explore-text-sculpture-4-text {
+        max-width: 40px;
+        font-size: 8px;
+    }
+}

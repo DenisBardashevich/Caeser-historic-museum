@@ -1,0 +1,16 @@
+{
+    "nav": [
+        {
+            "name": "Gallery",
+            "path": "gallery.html"
+        },
+        {
+            "name": "About",
+            "path": "#about"
+        },
+        {
+            "name": "FAQ",
+            "path": "#faq"
+        }
+    ]
+}
